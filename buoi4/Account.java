@@ -39,18 +39,4 @@ public class Account {
         System.out.println("Name: " + this.name);
         System.out.println("Balance: " + Integer.toString(this.balance));
     }
-
-    public static void Main(String[] args) {
-        Account acc1 = new Account("1ABC", "A", 1000);
-        Account acc2 = new Account("2DEF", "B", 500);
-
-        acc1.display();
-        acc2.display();
-
-        acc1.transferTo(acc2, 200);
-
-        System.out.println("----");
-        acc1.display();
-        acc2.display();
-    }
 }

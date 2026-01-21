@@ -51,9 +51,4 @@ public class Employee {
         System.out.println("Annual Salary: " + Integer.toString(this.annualSalary()));
 
     }
-
-    public static void Main(String[] args) {
-        Employee emp = new Employee(1, "Giang", "Nguyen", 50000);
-        emp.display();
-    }
 }

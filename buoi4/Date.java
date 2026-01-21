@@ -40,10 +40,4 @@ public class Date {
     public boolean isLeapYear() {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
-
-    public static void Main(String[] args) {
-        Date date = new Date(29, 2, 2020);
-        System.out.println("Date: " + date.toString());
-        System.out.println("La nam nhuan: " + date.isLeapYear());
-    }
 }

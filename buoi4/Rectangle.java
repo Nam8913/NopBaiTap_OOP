@@ -39,10 +39,4 @@ public class Rectangle {
         System.out.println(this.toString());
         System.out.println("Area: " + Integer.toString(this.getArea()));
     }
-
-    public static void Main(String[] args) {
-
-        Rectangle rect = new Rectangle(3, 4);
-        rect.display();
-    }
 }
