@@ -1,15 +1,15 @@
 public class Account {
-    private int id;
+    private String id;
     private String name;
     private int balance;
 
-    public Account(int id, String name, int balance) {
+    public Account(String id, String name, int balance) {
         this.id = id;
         this.name = name;
         this.balance = balance;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -35,14 +35,14 @@ public class Account {
     }
 
     public void display() {
-        System.out.println("ID: " + Integer.toString(this.id));
+        System.out.println("ID: " + this.id);
         System.out.println("Name: " + this.name);
         System.out.println("Balance: " + Integer.toString(this.balance));
     }
 
     public static void Main(String[] args) {
-        Account acc1 = new Account(1, "A", 1000);
-        Account acc2 = new Account(2, "B", 500);
+        Account acc1 = new Account("1ABC", "A", 1000);
+        Account acc2 = new Account("2DEF", "B", 500);
 
         acc1.display();
         acc2.display();
