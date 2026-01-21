@@ -30,6 +30,15 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    public int annualSalary() {
+        return this.salary * 12;
+    }
+
+    public void upToSalary(int percent) 
+    {
+        this.salary += this.salary * percent / 100;
+    }
     
     public String GetFullName() {
         return this.firstName + " " + this.lastName;
@@ -39,10 +48,12 @@ public class Employee {
         System.out.println("ID: " + Integer.toString(this.id));
         System.out.println("Full Name: " + this.GetFullName());
         System.out.println("Salary: " + Integer.toString(this.salary));
+        System.out.println("Annual Salary: " + Integer.toString(this.annualSalary()));
+
     }
 
     public static void Main(String[] args) {
-        Employee emp = new Employee(1, "Son", "Nguyen", 50000);
+        Employee emp = new Employee(1, "Giang", "Nguyen", 50000);
         emp.display();
     }
 }
