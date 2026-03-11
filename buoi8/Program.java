@@ -25,6 +25,12 @@ public class Program
         emp.display();
         cust.display();
         
+        PhuongTienDiChuyen pt1 = new MayBay();
+        pt1.tenPhuongTien = "May bay";
+        pt1.batDau();
+        pt1.tangToc();
+        pt1.dungLai();
+        System.out.println("Van toc: " + pt1.layVanToc() + " km/h");
         
     }
 }
